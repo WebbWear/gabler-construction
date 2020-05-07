@@ -1,15 +1,15 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
-  manifestName: 'Spectral',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Gabler Brothers Inc.', // <title>
+  manifestName: 'Gabler',
+  manifestShortName: 'Gabler_Bros', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#7795a8',
+  manifestThemeColor: '#0f2244',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  manifestIcon: 'src/assets/img/gabler-website-icon.png',
+  pathPrefix: `http://gablerbrothers.com/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Gabler Brothers Inc.',
+  subHeading: 'General Contracting and Construction Management',
   // social
   socialLinks: [
     {

@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
+import bannerpic from '../assets/images/gabler_logo.png';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -11,16 +12,19 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
+        <div className="image1">
+          <img src={bannerpic} alt="" />
+        </div>
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            <Scroll type="id" element="one">
+            {/* <Scroll type="id" element="one">
               <a href="/#" className="button primary">
                 Explore
               </a>
-            </Scroll>
+            </Scroll> */}
           </li>
         </ul>
       </div>
@@ -35,19 +39,14 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
+            Construction Services
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+          Gabler Brothers provides personalized construction services for your construction project or Real Estate Development. For over 20 years, we have completed 
+          multiple new construction projects, building upgrades, renovations and tenant improvements. We pride ourselves on meeting our customers goals by providing a hands on, full service approach to your project requirements.
           </p>
         </header>
-        <ul className="icons major">
+        {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
@@ -63,7 +62,7 @@ const IndexPage = () => (
               <span className="label">Dolor</span>
             </span>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
 
@@ -74,13 +73,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
+            Residential Rehab
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          Gabler Brothers are the premier remodeling contractors in town, offering the most complete and comprehensive residential construction and remodeling service in Tampa.
           </p>
         </div>
       </section>
@@ -121,7 +117,7 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Gabler Brothers</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
             eleifend
@@ -131,43 +127,43 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+          <li className="icon solid fa-drafting-compass">
+            <h3>Pre-Design</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>Design & Pre-Construction Management</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+          <li className="icon solid fa-tools">
+            <h3>Total Project Management</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li className="icon solid fa-hard-hat">
+            <h3>Construction Project Management</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
+          <li className="icon solid fa-hammer">
+            <h3>Design Build</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
+          <li className="icon solid fa-truck-pickup">
+            <h3>?</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
@@ -180,11 +176,8 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
+          <h2>Contact</h2>
+          
         </header>
         <ul className="actions stacked">
           <li>
