@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#0f2244',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/gabler-website-icon.png',
-  pathPrefix: `http://gablerbrothers.com/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `https://gabler-brothers-construction.netlify.app/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Gabler Brothers Inc.',
   subHeading: 'General Contracting and Construction Management',
   // social
