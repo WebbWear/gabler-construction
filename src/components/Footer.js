@@ -16,9 +16,9 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Spectral</li>
+        <li>&copy; Gabler Brothers Inc</li>
         <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
+          Design: <a href="http://webbwear.com">Webb Solutions</a>
         </li>
       </ul>
     </footer>
