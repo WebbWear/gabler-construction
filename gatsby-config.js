@@ -1,4 +1,5 @@
 const config = require('./config');
+const path = require(`path`);
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -19,15 +20,15 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        path: path.join(__dirname, `src`, `assets`, `images`),
       },
     },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],

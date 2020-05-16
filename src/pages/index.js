@@ -1,19 +1,25 @@
 import React from 'react';
-
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import bannerpic from '../assets/images/gabler_logo.png';
+import logo from '../assets/images/gabler_logo.png';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
-const IndexPage = () => (
+
+
+const IndexPage = () => {
+  return(
+
+
   <Layout>
     <section id="banner">
         <div className="image1">
-          <img src={bannerpic} alt="" />
+        <img src={logo} alt="" />
         </div>
       <div className="inner">
         <h2>{config.heading}</h2>
@@ -194,6 +200,19 @@ const IndexPage = () => (
       </div>
     </section>
   </Layout>
-);
+  )
+};
 
 export default IndexPage;
+
+// export const query = graphql`
+//   query {
+//     background: file(relativePath: {eq: "banner.jpg"}) {
+//       childImageSharp {
+//         fluid(maxWidth: 3600) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
