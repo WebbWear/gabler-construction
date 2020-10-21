@@ -8,7 +8,8 @@ import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import banner from '../assets/images/banner-opt1.jpg';
-const IndexPage = () => <Layout>
+const IndexPage = () => 
+<Layout fullMenu>
 	<article id="main">
 		<header>
 			<h2>Elements</h2>

@@ -1740,7 +1740,7 @@ button,
   position: relative;
   text-align: center;
 
-  h2 {
+  .action_logo {
     @include vendor('transform', 'scale(1)');
     @include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
     display: inline-block;
@@ -1787,7 +1787,7 @@ button,
       'transition',
       ('transform 0.75s ease', 'opacity 0.75s ease')
     );
-    @include vendor('transition-delay', '3.5s');
+    @include vendor('transition-delay', '1.5s');
     @include vendor('transform', 'translateY(0)');
     border: none;
     bottom: 0;
@@ -1825,7 +1825,7 @@ button,
   &:after {
     @include vendor('pointer-events', 'none');
     @include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
-    @include vendor('transition-delay', '1.25s');
+    @include vendor('transition-delay', '.25s');
     content: '';
     background: _palette(bg);
     display: block;

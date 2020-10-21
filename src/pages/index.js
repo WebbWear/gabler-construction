@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import logo from '../assets/images/gabler_logo.png';
+import logo from '../assets/images/gabler_logo_wht.png';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -19,20 +19,13 @@ const IndexPage = () => {
   <Layout>
     <section id="banner">
         <div className="image1">
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         </div>
       <div className="inner">
-        <h2>{config.heading}</h2>
+        {/* <h2>{config.heading}</h2> */}
+        <img className="action_logo" src={logo} alt="" />
         <p>{config.subHeading}</p>
-        <ul className="actions special">
-          <li>
-            {/* <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll> */}
-          </li>
-        </ul>
+        
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
@@ -92,13 +85,10 @@ const IndexPage = () => {
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            Commercial
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            We also have extensive knowledge of Commercial building.
           </p>
         </div>
       </section>
@@ -108,13 +98,12 @@ const IndexPage = () => {
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
+            Pre-Construction
             <br />
-            sed condimentum
+            Services
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            More about what you do
           </p>
         </div>
       </section>
@@ -125,54 +114,44 @@ const IndexPage = () => {
         <header className="major">
           <h2>Gabler Brothers</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+           I need some text here and for the 5 topics below. Also can you add one more topic so their is an even number?
           </p>
         </header>
         <ul className="features">
           <li className="icon solid fa-drafting-compass">
             <h3>Pre-Design</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Please provide a short description
             </p>
           </li>
           <li className="icon solid fa-laptop">
             <h3>Design & Pre-Construction Management</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Please provide a short description
             </p>
           </li>
           <li className="icon solid fa-tools">
             <h3>Total Project Management</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Please provide a short description
             </p>
           </li>
           <li className="icon solid fa-hard-hat">
             <h3>Construction Project Management</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Please provide a short description
             </p>
           </li>
           <li className="icon solid fa-hammer">
             <h3>Design Build</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Please provide a short description
             </p>
           </li>
           <li className="icon solid fa-truck-pickup">
             <h3>?</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+            Please provide a short description
             </p>
           </li>
         </ul>
@@ -187,15 +166,15 @@ const IndexPage = () => {
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
+            <a href="/contact" className="button fit primary">
+              Contact
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="/#" className="button fit">
               Learn More
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>
@@ -205,14 +184,14 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-// export const query = graphql`
-//   query {
-//     background: file(relativePath: {eq: "banner.jpg"}) {
-//       childImageSharp {
-//         fluid(maxWidth: 3600) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    background: file(relativePath: {eq: "banner.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 3600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
