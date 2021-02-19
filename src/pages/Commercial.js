@@ -12,7 +12,7 @@ const IndexPage = () =>
 <Layout fullMenu>
 	<article id="main">
 		<header>
-			<h2>Elements</h2>
+			<h2>Commercial</h2>
 			<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
 		</header>
 		<section className="wrapper style5">
@@ -22,7 +22,7 @@ const IndexPage = () =>
 					<h4>Text</h4>
 					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 					This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-					This is <u>underlined</u> and this is code: <code>for (;;) {`{ ... }`}</code>. Finally, <a href="/#">this is a link</a>.</p>
+					This is <u>underlined</u> and this is code: <code>for (;;) {`{ ... }`}</code>. Finally.</p>
 					<hr />
 					<header>
 						<h4>Heading with a Subtitle</h4>
@@ -34,6 +34,7 @@ const IndexPage = () =>
 						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
 					</header>
 					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+					<hr />
 					<hr />
 					<h2>Heading Level 2</h2>
 					<h3>Heading Level 3</h3>
@@ -64,7 +65,7 @@ const IndexPage = () =>
 						<div className="col-6 col-12-medium">
 							<h5>Unordered</h5>
 							<ul>
-								<li>Dolor pulvinar etiam.</li>
+								<li>Where is this?</li>
 								<li>Sagittis adipiscing.</li>
 								<li>Felis enim feugiat.</li>
 							</ul>
@@ -272,18 +273,7 @@ const IndexPage = () =>
 									<option value="1">Human Resources</option>
 								</select>
 							</div>
-							<div className="col-4 col-12-small">
-								<input type="radio" id="demo-priority-low" name="demo-priority" defaultChecked />
-								<label htmlFor="demo-priority-low">Low</label>
-							</div>
-							<div className="col-4 col-12-small">
-								<input type="radio" id="demo-priority-normal" name="demo-priority" />
-								<label htmlFor="demo-priority-normal">Normal</label>
-							</div>
-							<div className="col-4 col-12-small">
-								<input type="radio" id="demo-priority-high" name="demo-priority" />
-								<label htmlFor="demo-priority-high">High</label>
-							</div>
+							
 							<div className="col-6 col-12-small">
 								<input type="checkbox" id="demo-copy" name="demo-copy" />
 								<label htmlFor="demo-copy">Email me a copy</label>
